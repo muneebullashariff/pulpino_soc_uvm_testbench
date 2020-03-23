@@ -1,0 +1,7 @@
+# Ip level
+vcs -V -R -full64 -sverilog +v2k -f $UART/uart.f -debug_access +all -ntb+_opts -debug_pp +ntb_random_seed_automatic -override_timescale=1ps/1ps
+# Ip level
+vcs -V -R -full64 -sverilog +v2k -f $I2C/i2c.f -debug_access +all -ntb+_opts -debug_pp +ntb_random_seed_automatic -override_timescale=1ps/1ps
+
+# Soc Level
+vcs -V -R -full64 -sverilog +v2k -f $SOC/soc.csh -debug_access +all -ntb+_opts -debug_pp +ntb_random_seed_automatic -override_timescale=1ps/1ps
